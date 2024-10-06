@@ -52,3 +52,14 @@ html,
 	    transform: translateX(0px);
 	  }
 	}
+	/* 禁用文本选择 */
+* {
+    user-select: none; /* 禁用所有元素的文本选择 */
+    -webkit-user-select: none; /* 禁用在 WebKit 浏览器中的文本选择 */
+    -ms-user-select: none; /* 禁用在 Internet Explorer/Edge 中的文本选择 */
+}
+
+/* 禁用长按显示上下文菜单（右键菜单） */
+html, body {
+    -webkit-touch-callout: none; /* 禁用 iOS 长按时的菜单显示 */
+}
